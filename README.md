@@ -1,4 +1,4 @@
-# holySHI Language
+# HolySHI Language
 holySHI is a simple, custom programming language designed for educational purposes. It features basic integer variable declarations, arithmetic operations, and print functionality.
 
 
