@@ -4,7 +4,7 @@ holySHI is a simple, custom programming language designed for educational purpos
 
 ## Features
 
-- Variable declaration using `summonsoul` (supports only integer value right now).
+- Variable declaration using `summonsoul` (supports only integer values right now).
 - Arithmetic operations (`+`, `-`, `*`, `/`).
 - Print statements using `chant`.
 
