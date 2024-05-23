@@ -35,17 +35,17 @@ g++ -o holySHI main.cpp
 For the `example.hshi` file, the output will be:
 30
 
-# Implementation Details
+## Implementation Details
 
-## Lexer
+### Lexer
 
 The lexer tokenizes the source code into tokens. Each token is categorized into different types, such as Keyword, Identifier, Assignment, Number, String, Plus, Minus, Multiply, Divide, Modulus, Equal, LessThan, GreaterThan, LessEqual, LParen, RParen, Eol.
 
-## Parser
+### Parser
 
 The parser processes the tokens and builds an Abstract Syntax Tree (AST). It supports parsing statements and expressions, including variable declarations and arithmetic operations.
 
-## Code Generation
+### Code Generation
 
 The code generation phase translates the AST into executable code. Currently, it generates C++ code as an intermediate step, which is then compiled and executed.
 
@@ -55,10 +55,31 @@ The code generation phase translates the AST into executable code. Currently, it
 
 - `lexer.h`: Contains the definitions for tokens and the lexer structure.
 - `lexer.cpp`: Implements the lexer for tokenizing the source code.
-- `AST.h`: Contains the definitions for the Abstract Syntax Tree (AST) nodes.
-- `Parser.h`: Implements the parser for generating the AST from tokens.
-- `codeGeneration.h`: Implements the code generation from the AST to C++ code.
+- `AST.cpp`: Contains the definitions for the Abstract Syntax Tree (AST) nodes.
+- `Parser.cpp`: Implements the parser for generating the AST from tokens.
+- `codeGeneration.cpp`: Implements the code generation from the AST to C++ code.
 - `main.cpp`: The entry point for the holySHI interpreter.
+
+## Building the Interpreter
+
+### Clone the Repository:
+
+```sh
+git clone https://github.com/YourUsername/holySHI.git
+cd holySHI
+
+BUILD:
+g++ -o holySHI main.cpp
+
+RUN:
+./holySHI <filename>.hshi
+```
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit pull requests for any enhancements or bug fixes.
+
+## Acknowledgements
+I was inspired to create this language by the work of Terry A. Davis, the creator of HolyC and TempleOS. Thank you, Terry, for your groundbreaking contributions and inspiration.
 
 
 
