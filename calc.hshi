@@ -1,0 +1,11 @@
+summonsoul a = 10;
+summonsoul b = 20;
+summonsoul sum = a + b;
+summonsoul product = a*b;
+summonsoul divide = b/a;
+chant(sum);
+chant(product);
+chant(divide);
+
+
+
